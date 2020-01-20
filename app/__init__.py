@@ -1,13 +1,14 @@
 from app.apple import Apple 
 from app.snake import Snake
-from app.text import Text 
+from app.text import Text
+import os
 import pygame
 
 
 class App(object):
 
     FPS = 20
-    FONT = "font/Autumn.ttf"
+    FONT = os.path.join("font","Autumn.ttf")
     WINDOW_GEOMETRY = [400, 400]
     WINDOW_TITLE = "Snake Game"
 
